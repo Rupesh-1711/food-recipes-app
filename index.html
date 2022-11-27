@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+ *{
+    margin-top: 10px 0px 0px 0px;
+    padding: 0;
+ }
+        #navbarHome{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(35, 41, 41);
+            padding: 15px 15px 15px 3%;
+            
+        }
+        h2{
+            padding: 0%;
+            margin: 0%;
+        }
+        input{
+            width: 400px;
+            height: 25px;
+            border-radius: 5px;
+            border-color: rgb(12, 23, 23);
+            font-weight: 600;
+        }
+        #pages2{
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+            font-size: 17px;
+            font-weight: 800;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            background-color: aliceblue;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        a:hover
+        {
+            color: rgb(255, 255, 255);
+            background-color: rgb(5, 115, 211);  
+        }
+        
+       #container{
+        width: 95%;
+        gap:30px;
+        margin: auto;
+        /* margin-top:30px; */
+        padding: 35px;
+        background-color: rgb(223, 240, 240);
+       } 
+
+       .cart{
+        background-color: rgb(189, 221, 249);
+        margin: 10px;
+        padding: 10px;
+         border-radius: 10px;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+       }
+        </style>
+  
+</head>
+<body>
+  <div id="navbarHome">
+    <img id="goHome" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvzakNspLU75sDxL9v0kAzRWbeQdTF7uEVY7ya8fY9CuuC3CT5BI0vrMB4yRRRiJ9-zKc&usqp=CAU" width="100px" height="40px" alt="" id="nameOfPage">
+    <div id="search_box">
+           <input type="text" id="query" placeholder="Search Here..." oninput="debounce(main,2000)">
+    </div>
+    <div id="pages2">
+       <div id="dayReceipe"><a href="receipe.html">Recipe of the day</a></div>
+       <div id="random"><a href="random.html">random receipes</a></div>
+       <div id="login"><a href="signin.html">Sign In</a></div>
+       <div id="signup"><a href="signup.html">Sign Up</a></div>
+    </div>
+    </div>
+    <div id="container">
+
+    </div>
+</body>
+</html>
+<script src="script/index.js"></script>
+
+
+
